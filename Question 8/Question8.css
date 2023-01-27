@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;900&display=swap');
+
+html {
+    font-family: 'Playfair Display', serif;
+    background-color: #231F20;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#side-menu {
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("statics/side-menu.png");
+    background-size: 100% 100%;
+    width: 27%;
+    height: 100%;
+    position: fixed;
+}
+
+#right-div {
+    width: 90%;
+    min-height: 100%;
+    margin-left: 25%;
+}
+
+#header {
+    text-align: center;
+    font-size: 300%;
+}
+
+#header > a {
+    color: #FEFAE0;
+    text-decoration: none;
+}
+
+#content {
+    width: 100%;
+    color: #FEFAE0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+/*.redirections:hover {*/
+/*    !*border: none;*!*/
+/*}*/
+
+.redirections {
+    font-size: 150%;
+    font-weight: 2;
+    border: 1px solid transparent;
+    padding: 10px;
+    width: fit-content;
+    color: #FEFAE0;
+    /*background-color: rgba(254, 250, 224, 0.25);*/
+    background-color: rgba(35, 31, 32, 0.4);
+    text-decoration: none;
+    margin-top: 275px;
+    position: absolute;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    background-size: 100% 100%;
+    position: relative;
+    border: 2px solid #FEFAE0;
+    width: 400px;
+    height: 400px;
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column > img {
+    transition: transform .5s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.column:hover > .redirections {
+    color: #FEFAE0;
+    border: 2px solid;
+}
+
+.column:hover {
+    border: 2px solid #FEFAE0;
+}
+
+.column:hover .image {
+    transform: scale(1.2);
+}
+
+#footer {
+    width: 100%;
+    min-height: 100px;
+    z-index: 0;
+
+}
+
+#side-menu > a {
+    margin: 40px 150px 40px 15px;
+    color: #231F20;
+}
+
+#side-menu > a:hover {
+    color: #BC6C25;
+}
+
+/*https://pixabay.com/photos/dog-pet-canine-animal-lying-fur-2785077/?download*/
+/*https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.battersea.org.uk%2Fpet-advice%2Fcat-care-advice%2Fcats-and-fireworks&psig=AOvVaw3pm0Ty9VoBtX9aHXu0gW5m&ust=1674858256716000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCKCnt62j5vwCFQAAAAAdAAAAABAE*/
+/*https://pixabay.com/photos/cat-pet-animal-domestic-feline-7533717/*/
+/*https://pixabay.com/photos/french-bulldog-dog-domestic-animal-4352765/*/
+
+
+/*https://www.pexels.com/photo/brown-and-white-short-coated-puppy-1805164/*/

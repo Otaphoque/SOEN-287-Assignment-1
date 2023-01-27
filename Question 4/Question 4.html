@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+    <style>
+        html {
+            color: white;
+        }
+
+        fieldset, legend, label, input {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #first > legend {
+            background-color: rgba(216, 220, 255);
+        }
+
+        #second > legend {
+            background-color: rgba(174, 173, 240);
+        }
+
+        fieldset, legend {
+            border: solid white;
+        }
+
+        body {
+            background-color: rgba(253, 66, 65);
+        }
+
+        #first {
+            background-color: rgba(216, 220, 255);
+        }
+
+        #second {
+            background-color: rgba(174, 173, 240);
+        }
+
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td><h1>Music Lover's Survey</h1></td>
+        <td>
+        <td>
+            <a href="https://www.istockphoto.com/vector/young-man-listen-to-music-on-headphones-music-therapy-guy-profile-avatar-gm1205771672-347478896">
+                <img alt="Person that is listening to music"
+                     src="https://media.istockphoto.com/id/1205771672/vector/young-man-listen-to-music-on-headphones-music-therapy-guy-profile-avatar.jpg?s=612x612&w=0&k=20&c=CqTw8UXCSxtyyPZxJOFLdWt8GiETIbkdjRDs94-hQCI="
+                     width="100px">
+            </a>
+        </td>
+        </td>
+    </tr>
+</table>
+
+<fieldset id="first"> <!-- PERSONAL INFORMATION FILESET -->
+
+    <legend>Music Lover's Personal Information</legend>
+
+    <label id="first-name">First Name :
+        <input form="first-name" name="First Name" type="text">
+    </label> <br>
+
+    <label id="last-name">Last Name :
+        <input form="last-name" name="Last Name" type="text">
+    </label> <br>
+
+    <label id="gender">Gender :
+        <input form="gender" name="Gender" type="radio">Male
+        <input form="gender" name="Gender" type="radio">Female
+    </label> <br>
+
+    <label id="age">What age category best describes you ?
+        <select form="age">
+            <option>Less than 18 years old</option>
+            <option>18-30 years old</option>
+            <option>30-50 years old</option>
+            <option>Older than 50 years old</option>
+        </select>
+    </label> <br>
+
+    <label id="email">Email Address :
+        <input form="email" name="Gender" type="email">
+    </label> <br>
+
+</fieldset>
+
+<fieldset id="second"> <!-- SURVEY QUESTIONS -->
+
+    <legend>Survey Questions</legend>
+
+    <label id="type">Which type of music do you listen to ? (Pick as many as apply)
+        <input form="type" type="checkbox">Blues
+        <input form="type" type="checkbox">Classical
+        <input form="type" type="checkbox">Electronic
+        <input form="type" type="checkbox">Hip Hop
+        <input form="type" type="checkbox">Rap
+        <input form="type" type="checkbox">Reggae
+        <input form="type" type="checkbox">Other
+    </label> <br>
+
+    <label type="artist">List your favorite artists/bands :
+        <input form="type" type="text">
+        <input form="type" type="text">
+        <input form="type" type="text">
+    </label> <br>
+
+    <label id="dead-artists">If you could go back in time and meet of these artist(s), which one would you meet ?
+        <input form="dead-artists" type="radio">XXXTentacion
+        <input form="dead-artists" type="radio">Micheal Jackson
+        <input form="dead-artists" type="radio">Elvis Presley
+        <input form="dead-artists" type="radio">John Lennon
+    </label>
+
+</fieldset>
+
+<div>
+    <p>Thank you for taking the time to fill out our survey!</p>
+    <button>Submit</button>
+    <button>Reset</button>
+</div>
+
+</body>
+</html>

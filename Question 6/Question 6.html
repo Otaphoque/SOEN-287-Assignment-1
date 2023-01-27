@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 6</title>
+
+    <style>
+        li:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        li:active, li[aria-current] {
+            background-color: lightseagreen;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            width: 100px;
+            background-color: lightblue
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Vertical Navigation Bar</h1>
+
+<p>"Home" is the current page. There are four menu items.</p>
+
+<div>
+    <ul>
+        <li aria-current="page">Home</li>
+        <li>News</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+</div>
+
+</body>
+</html>
