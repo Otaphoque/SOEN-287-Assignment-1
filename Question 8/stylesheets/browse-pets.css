@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;900&display=swap');
+
+html {
+    font-family: 'Playfair Display', serif;
+    background-color: #231F20;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#side-menu {
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../statics/side-menu.png");
+    background-size: 100% 100%;
+    width: 27%;
+    height: 100%;
+    position: fixed;
+}
+
+#right-div {
+    width: 90%;
+    min-height: 100%;
+    margin-left: 25%;
+}
+
+#header {
+    text-align: center;
+    font-size: 300%;
+}
+
+#header > a {
+    color: #FEFAE0;
+    text-decoration: none;
+}
+
+#footer {
+    width: 100%;
+    min-height: 100px;
+    z-index: 0;
+
+}
+
+#side-menu > a {
+    margin: 40px 150px 40px 15px;
+    color: #231F20;
+}
+
+#side-menu > a:hover {
+    color: #BC6C25;
+}

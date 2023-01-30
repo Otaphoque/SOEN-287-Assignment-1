@@ -19,7 +19,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("statics/side-menu.png");
+    background: url("../statics/side-menu.png");
     background-size: 100% 100%;
     width: 27%;
     height: 100%;
@@ -51,10 +51,6 @@ html {
     align-items: center;
     margin: 50px 0 50px 0;
 }
-
-/*.redirections:hover {*/
-/*    !*border: none;*!*/
-/*}*/
 
 .redirections {
     font-size: 150%;
@@ -100,7 +96,7 @@ html {
     width: 100%;
 }
 
-.column:hover > .redirections {
+.redirections:hover {
     color: #FEFAE0;
     border: 2px solid;
 }
