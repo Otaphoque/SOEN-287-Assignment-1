@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuzzy Friends</title>
+    <link href="stylesheets/find-pet.css" rel="stylesheet">
+</head>
+<body>
+<div id="main-div">
+    <div id="side-menu">
+
+        <a href="index.html">
+            <img alt="Logo" height="100px" id="logo" src="statics/logo.png" width="100px">
+        </a>
+
+        <a class="links" href="index.html">Home Page</a>
+        <a class="links" href="browse-pets.html">Browse Pets</a>
+        <a class="links" href="find-pet-cat.html">Find a Pet</a>
+        <a class="links" href="give-pet.html">Give a Pet</a>
+        <a class="links" href="pet-care.html">Pet Care</a>
+        <a class="links" href="contact-us.html">Contact Us</a>
+
+    </div>
+
+    <div id="right-div">
+        <div id="header"><a href="index.html">Fuzzy Friends</a></div>
+        <div id="content">
+
+            <fieldset>
+
+                <legend>Adoption Form</legend>
+
+                <label id="pet-type">Pet type:
+                    <input form="pet-type" name="Gender" type="radio">Cat
+                    <input form="pet-type" name="Gender" type="radio">Dog
+                </label> <br>
+
+                <label id="race">Race:
+                    <input form="race" name="First Name" type="text">
+                </label> <br>
+
+                <label id="age">Preferred age:
+                    <select form="age">
+                        <option>Less than a year old</option>
+                        <option>1-3 years</option>
+                        <option>3-7 years</option>
+                        <option>7-12 years</option>
+                        <option>12+ years</option>
+                    </select>
+                </label> <br>
+
+                <label id="gender">Pet type:
+                    <input form="gender" name="Gender" type="radio">Male
+                    <input form="gender" name="Gender" type="radio">Female
+                    <input form="gender" name="Gender" type="radio">Indifferent
+                </label> <br>
+
+                <label id="type">Gets along with...
+                    <input form="type" type="checkbox">cats
+                    <input form="type" type="checkbox">dogs
+                    <input form="type" type="checkbox">other animals
+                    <input form="type" type="checkbox">small children
+                    <input form="type" type="checkbox">indifferent
+                </label> <br>
+
+                <label id="comment">Comments:
+                    <input form="comment" name="First Name" type="text">
+                </label> <br>
+
+            </fieldset>
+
+            <button>Submit</button>
+            <button>Reset</button>
+
+        </div>
+        <div id="footer">This is the footer</div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

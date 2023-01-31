@@ -3,6 +3,7 @@
 html {
     font-family: 'Playfair Display', serif;
     background-color: #231F20;
+    color: #FEFAE0;
 }
 
 #main-div {
@@ -44,12 +45,29 @@ html {
 
 #content {
     width: 100%;
-    color: #FEFAE0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 50px 0 50px 0;
+}
+
+#content > hr {
+    height: 2px;
+    width: 70%;
+    color: #FEFAE0;
+    border: 0;
+    border-top: 2px solid;
+}
+
+#description {
+    /*background-color: #FEFAE0;*/
+    /*color: #533433;*/
+    color: #FEFAE0;
+    padding: 10px;
+    margin: 20px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .redirections {
@@ -116,10 +134,14 @@ html {
 
 }
 
-#side-menu > a {
-    margin: 40px 150px 40px 15px;
-    color: #231F20;
+#logo {
+    margin: 30px 150px 100px 15px
 }
+
+#side-menu > .links {
+     margin: 10px 150px 50px 15px;
+     color: #231F20;
+ }
 
 #side-menu > a:hover {
     color: #BC6C25;

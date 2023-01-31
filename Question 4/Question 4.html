@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <title>Question 4</title>
     <style>
-        html {
-            color: white;
-        }
 
         fieldset, legend, label, input {
             margin: 5px;
             padding: 5px;
         }
 
-        #first > legend {
-            background-color: rgba(216, 220, 255);
+        fieldset > .prompts {
+            font-weight: bold;
         }
 
-        #second > legend {
-            background-color: rgba(174, 173, 240);
+        #second > label {
+            color: lightgreen;
         }
 
-        fieldset, legend {
-            border: solid white;
-        }
-
-        body {
-            background-color: rgba(253, 66, 65);
+        #first > label {
+            color: lightyellow;
         }
 
         #first {
-            background-color: rgba(216, 220, 255);
+            background-color: rgba(255, 255, 0, 0.6);
+            border: solid 3px rgba(255, 255, 0, 1);
+        }
+
+        #first > legend {
+            color: rgba(255, 255, 0, 1)
+        }
+
+        #second > legend {
+            color: rgba(0, 255, 0, 1)
         }
 
         #second {
-            background-color: rgba(174, 173, 240);
+            background-color: rgba(0, 255, 0, 0.6);
+            border: solid 3px rgba(0, 255, 0, 1);
+        }
+
+        fieldset {
+            border: solid 1px;
+        }
+
+        body {
+            background-color: rgba(255, 0, 0, 0.8);
         }
 
     </style>
@@ -45,83 +56,91 @@
     <tr>
         <td><h1>Music Lover's Survey</h1></td>
         <td>
-        <td>
             <a href="https://www.istockphoto.com/vector/young-man-listen-to-music-on-headphones-music-therapy-guy-profile-avatar-gm1205771672-347478896">
                 <img alt="Person that is listening to music"
                      src="https://media.istockphoto.com/id/1205771672/vector/young-man-listen-to-music-on-headphones-music-therapy-guy-profile-avatar.jpg?s=612x612&w=0&k=20&c=CqTw8UXCSxtyyPZxJOFLdWt8GiETIbkdjRDs94-hQCI="
-                     width="100px">
+                     width="100">
             </a>
-        </td>
         </td>
     </tr>
 </table>
 
-<fieldset id="first"> <!-- PERSONAL INFORMATION FILESET -->
+<form>
 
-    <legend>Music Lover's Personal Information</legend>
+    <fieldset id="first"> <!-- PERSONAL INFORMATION FILESET -->
 
-    <label id="first-name">First Name :
-        <input form="first-name" name="First Name" type="text">
-    </label> <br>
+        <legend>Music Lover's Personal Information</legend>
 
-    <label id="last-name">Last Name :
-        <input form="last-name" name="Last Name" type="text">
-    </label> <br>
+        <label for="first-name" class="prompts">First Name :</label>
+        <input id="first-name" name="first-name" type="text">
+        <br>
 
-    <label id="gender">Gender :
-        <input form="gender" name="Gender" type="radio">Male
-        <input form="gender" name="Gender" type="radio">Female
-    </label> <br>
+        <label for="last-name" class="prompts">Last Name:</label>
+        <input id="last-name" name="last-name" type="text">
+        <br>
 
-    <label id="age">What age category best describes you ?
-        <select form="age">
+        <label class="prompts">Gender:</label>
+        <input id="male" name="gender" type="radio" value="male">
+        <label for="male">Male</label>
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="female">Female</label>
+        <br>
+
+        <label for="age" class="prompts">What age category best describes you?</label>
+        <select id="age" name="age">
             <option>Less than 18 years old</option>
             <option>18-30 years old</option>
             <option>30-50 years old</option>
             <option>Older than 50 years old</option>
-        </select>
-    </label> <br>
+        </select><br>
 
-    <label id="email">Email Address :
-        <input form="email" name="Gender" type="email">
-    </label> <br>
+        <label for="email" class="prompts">Email Address</label>
+        <input id="email" name="email" type="email">
+        <br>
 
-</fieldset>
+    </fieldset>
 
-<fieldset id="second"> <!-- SURVEY QUESTIONS -->
+    <fieldset id="second"> <!-- SURVEY QUESTIONS -->
 
-    <legend>Survey Questions</legend>
+        <legend>Survey Questions</legend>
 
-    <label id="type">Which type of music do you listen to ? (Pick as many as apply)
-        <input form="type" type="checkbox">Blues
-        <input form="type" type="checkbox">Classical
-        <input form="type" type="checkbox">Electronic
-        <input form="type" type="checkbox">Hip Hop
-        <input form="type" type="checkbox">Rap
-        <input form="type" type="checkbox">Reggae
-        <input form="type" type="checkbox">Other
-    </label> <br>
+        <label id="type" class="prompts">Which type of music do you listen to? (Pick as many as apply)</label>
+        <input id="blues" type="checkbox"><label for="blues">Blues</label>
+        <input id="classical" type="checkbox"><label for="classical">Classical</label>
+        <input id="electronic" type="checkbox"><label for="electronic">Electronic</label>
+        <input id="hiphop" type="checkbox"><label for="hiphop">Hip Hop</label>
+        <input id="rap" type="checkbox"><label for="rap">Rap</label>
+        <input id="reggae" type="checkbox"><label for="reggae">Reggae</label>
+        <input id="other" type="checkbox"><label for="other">Other</label>
+        <br>
 
-    <label type="artist">List your favorite artists/bands :
-        <input form="type" type="text">
-        <input form="type" type="text">
-        <input form="type" type="text">
-    </label> <br>
+        <label id="artist" class="prompts">List your favorite artists/bands</label>
+        <label for="artist1"></label><input id="artist1" name="artist" type="text">
+        <label for="artist2"></label><input id="artist2" name="artist" type="text">
+        <label for="artist3"></label><input id="artist3" name="artist" type="text">
+        <br>
 
-    <label id="dead-artists">If you could go back in time and meet of these artist(s), which one would you meet ?
-        <input form="dead-artists" type="radio">XXXTentacion
-        <input form="dead-artists" type="radio">Micheal Jackson
-        <input form="dead-artists" type="radio">Elvis Presley
-        <input form="dead-artists" type="radio">John Lennon
-    </label>
+        <label class="prompts">If you could go back in time and meet of these artist(s), which one
+            would you meet?</label>
+        <input id="XXXTentacion" name="gender" type="radio" value="male">
+        <label for="XXXTentacion">XXXTentacion</label>
+        <input id="Michael-Jackson" name="gender" type="radio" value="female">
+        <label for="Michael-Jackson">Michael Jackson</label>
+        <input id="Elvis-Presley" name="gender" type="radio" value="female">
+        <label for="Elvis-Presley">Elvis Presley</label>
+        <input id="John-Lenon" name="gender" type="radio" value="female">
+        <label for="John-Lenon">John Lenon</label>
+        <br>
 
-</fieldset>
+    </fieldset>
 
-<div>
-    <p>Thank you for taking the time to fill out our survey!</p>
-    <button>Submit</button>
-    <button>Reset</button>
-</div>
+    <div>
+        <p>Thank you for taking the time to fill out our survey!</p>
+        <button>Submit</button>
+        <button>Reset</button>
+    </div>
+
+</form>
 
 </body>
 </html>

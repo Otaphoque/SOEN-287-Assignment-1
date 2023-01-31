@@ -3,12 +3,27 @@
 html {
     font-family: 'Playfair Display', serif;
     background-color: #231F20;
+    color: #FEFAE0;
 }
 
 #main-div {
     display: flex;
     flex-direction: row;
     position: relative;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#content > p {
+    padding: 1%;
+    background-color: #FEFAE0;
+    color: #231F20;
+    border-radius: 15px;
 }
 
 #side-menu {
@@ -49,8 +64,12 @@ html {
 
 }
 
-#side-menu > a {
-    margin: 40px 150px 40px 15px;
+#logo {
+    margin: 30px 150px 100px 15px
+}
+
+#side-menu > .links {
+    margin: 10px 150px 50px 15px;
     color: #231F20;
 }
 
