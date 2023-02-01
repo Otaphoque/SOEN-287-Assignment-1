@@ -1,31 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;900&display=swap');
-
-html {
-    font-family: 'Playfair Display', serif;
-    background-color: #231F20;
-    color: #FEFAE0;
-}
-
-#main-div {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-#cat, #dog {
-    background-color: #BC6C25;
-    width: 200px;
-    padding: 10px;
-}
-
 #headers {
     display: flex;
     flex-direction: row;
-}
-
-#form {
-    size: 500px 500px;
-    background-color: #BC6C25;
 }
 
 legend {
@@ -35,54 +10,6 @@ legend {
 #content {
     z-index: 99;
     position: relative;
-}
-
-#side-menu {
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url("../statics/side-menu.png");
-    background-size: 100% 100%;
-    width: 27%;
-    height: 100%;
-    position: fixed;
-}
-
-#right-div {
-    width: 90%;
-    min-height: 100%;
-    margin-left: 25%;
-}
-
-#header {
-    text-align: center;
-    font-size: 300%;
-}
-
-a {
-    color: #FEFAE0;
-    text-decoration: none;
-}
-
-#footer {
-    width: 100%;
-    min-height: 100px;
-    z-index: 0;
-
-}
-
-#logo {
-    margin: 30px 150px 100px 15px
-}
-
-#side-menu > .links {
-    margin: 10px 150px 50px 15px;
-    color: #231F20;
-}
-
-#side-menu > a:hover {
-    color: #BC6C25;
+    font-size: 125%;
+    line-height: 35px;
 }
