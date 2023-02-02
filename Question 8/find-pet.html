@@ -7,84 +7,97 @@
     <link href="stylesheets/main.css" rel="stylesheet">
 </head>
 <body>
-<div id="main-div">
-    <div id="side-menu">
+<div id="general-div">
+    <div id="main-div">
+        <div id="side-menu">
 
-        <div id="logo">
-            <a href="index.html">
-                <img alt="Logo" height="100" src="statics/logo.png" width="100">
-            </a>
-        </div>
+            <div id="logo">
+                <a href="index.html">
+                    <img alt="Logo" height="100" src="statics/logo.png" width="100">
+                </a>
+            </div>
 
-        <a class="links" href="index.html">Home Page</a>
-        <a class="links" href="browse-pets.html">Browse Pets</a>
-        <a class="links" href="find-pet.html">Find a Pet</a>
-        <a class="links" href="give-pet.html">Give a Pet</a>
-        <a class="links" href="pet-care.html">Pet Care</a>
-        <a class="links" href="contact-us.html">Contact Us</a>
-
-    </div>
-
-    <div id="right-div">
-        <div id="header"><a href="index.html">Fuzzy Friends</a></div>
-        <div id="content">
-
-            <form>
-
-                <fieldset>
-
-                    <legend>Adoption Request Form</legend>
-
-                    <label>Animal:</label>
-                    <input id="cat" name="animal" type="radio" value="cat">
-                    <label for="cat">Cat</label>
-                    <input id="dog" name="animal" type="radio" value="dog">
-                    <label for="dog">Dog</label>
-                    <br>
-
-                    <label for="breed">Desired breed:</label>
-                    <input id="breed" name="breed" type="text">
-                    <br>
-
-                    <label for="age">Preferred age</label>
-                    <select id="age" name="age">
-                        <option>Less than a year old</option>
-                        <option>1-3 years</option>
-                        <option>3-7 years</option>
-                        <option>7-12 years</option>
-                        <option>12+ years</option>
-                    </select><br>
-
-                    <label>Pet gender:</label>
-                    <input id="male" name="gender" type="radio" value="male">
-                    <label for="male">Male</label>
-                    <input id="female" name="gender" type="radio" value="female">
-                    <label for="female">Female</label>
-                    <input id="indifferent" name="gender" type="radio" value="indifferent">
-                    <label for="indifferent">Indifferent</label>
-                    <br>
-
-                    <label id="type">Gets along with...</label>
-                    <input type="checkbox" id="cats"><label for="cats">cats</label>
-                    <input type="checkbox" id="dogs"><label for="dogs">dogs</label>
-                    <input type="checkbox" id="other-animals"><label for="other-animals">other animals</label>
-                    <input type="checkbox" id="small-children"><label for="small-children">small children</label>
-                    <br>
-
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments" rows="4" cols="50">Enter your comments...</textarea>
-                    <br>
-
-                </fieldset>
-
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </form>
+            <a class="links" href="index.html">Home Page</a>
+            <a class="links" href="browse-pets.html">Browse Pets</a>
+            <a class="links" href="find-pet.html">Find a Pet</a>
+            <a class="links" href="give-pet.html">Give a Pet</a>
+            <a class="links" href="pet-care.html">Pet Care</a>
+            <a class="links" href="contact-us.html">Contact Us</a>
 
         </div>
-        <div id="footer">This is the footer</div>
-    </div>
 
+        <div id="right-div">
+            <div id="header"><a href="index.html">Fuzzy Friends</a></div>
+            <div id="content">
+
+                <h1>Pet Request Form</h1>
+
+                <form>
+
+                    <fieldset>
+
+                        <div class="section-title">
+                            <p><span>Fuzzy Friend Information</span></p>
+                        </div>
+
+                        <br>
+
+                        <label>Animal:</label>
+                        <input id="cat" name="animal" type="radio" value="cat">
+                        <label for="cat">Cat</label>
+                        <input id="dog" name="animal" type="radio" value="dog">
+                        <label for="dog">Dog</label>
+                        <br>
+
+                        <label for="breed">Desired breed:</label>
+                        <input id="breed" name="breed" type="text">
+                        <br>
+
+                        <label for="age">Preferred age</label>
+                        <select id="age" name="age">
+                            <option>Less than a year old</option>
+                            <option>1-3 years</option>
+                            <option>3-7 years</option>
+                            <option>7-12 years</option>
+                            <option>12+ years</option>
+                        </select><br>
+
+                        <label>Pet gender:</label>
+                        <input id="male" name="gender" type="radio" value="male">
+                        <label for="male">Male</label>
+                        <input id="female" name="gender" type="radio" value="female">
+                        <label for="female">Female</label>
+                        <input id="indifferent" name="gender" type="radio" value="indifferent">
+                        <label for="indifferent">Indifferent</label>
+                        <br>
+
+                        <label id="type">Gets along with...</label>
+                        <input id="cats" type="checkbox"><label for="cats">cats</label>
+                        <input id="dogs" type="checkbox"><label for="dogs">dogs</label>
+                        <input id="other-animals" type="checkbox"><label for="other-animals">other animals</label>
+                        <input id="small-children" type="checkbox"><label for="small-children">small children</label>
+                        <br>
+
+                        <label for="comments">Comments:</label>
+                        <textarea cols="50" id="comments" name="comments" rows="1">Enter your comments...</textarea>
+                        <br>
+
+                    </fieldset>
+
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        Copyright 2023 by ©Constance Prevot. All Rights Reserved.<br>
+        Website powered by HTML & CSS (for now)
+    </div>
 
 </div>
 

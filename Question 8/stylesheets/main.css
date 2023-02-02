@@ -1,3 +1,10 @@
+/*white :     #FEFAE0       */
+/*yellow :    #DDA15E       */
+/*orange :    #BC6C25       */
+/*maron :     #563635       */
+/*brown :     #231F20       */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;900&display=swap');
 
 html {
@@ -67,7 +74,7 @@ textarea, input {
 }
 
 #logo img {
-    margin: 30px 150px 100px 15px
+    margin: 30px 150px 100px 15px;
 }
 
 #side-menu > .links {
@@ -81,9 +88,19 @@ textarea, input {
 }
 
 #footer {
-    width: 100%;
-    min-height: 100px;
+    /*background-color: rgba(86,54,53,0.2);*/
+    /*border-top: 1px solid #FEFAE0;*/
+    /*background-color: rgba(35, 31, 32, 0.4);*/
+    background: rgb(35,31,32);
+    background: linear-gradient(180deg, rgba(35,31,32,1) 0%, rgba(86,54,53,0.4) 59%);
+    float: right;
+    padding: 5% 2% 2% 2%;
+    width: 90%;
     z-index: 0;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    font-size: small;
 }
 
 a {
@@ -91,11 +108,8 @@ a {
     text-decoration: none;
 }
 
-.buttons {
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+h1 {
+    font-weight: normal;
+    font-size: 175%;
+    color: #BC6C25;
 }

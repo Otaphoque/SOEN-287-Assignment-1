@@ -44,3 +44,12 @@ h1 {
     font-size: 175%;
     color: #BC6C25;
 }
+
+.buttons {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
