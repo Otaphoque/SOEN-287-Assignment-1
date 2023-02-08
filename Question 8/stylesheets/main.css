@@ -83,17 +83,29 @@ textarea, input {
     text-decoration: none;
 }
 
+a.active:hover {
+    border-bottom: 1px solid #BC6C25;
+}
+
+a.active {
+    border-bottom: 1px solid #231F20;
+    margin-bottom: 44px;
+    padding: 3px;
+}
+
 #side-menu > a:hover {
     color: #BC6C25;
 }
 
 #footer {
-    /*background-color: rgba(86,54,53,0.2);*/
+    /*background-color: rgba(86,54,53,1);*/
     /*border-top: 1px solid #FEFAE0;*/
     /*background-color: rgba(35, 31, 32, 0.4);*/
     background: rgb(35,31,32);
     background: linear-gradient(180deg, rgba(35,31,32,1) 0%, rgba(86,54,53,0.4) 59%);
     float: right;
+    flex-direction: column;
+    line-height: 125%;
     padding: 5% 2% 2% 2%;
     width: 90%;
     z-index: 0;
@@ -106,10 +118,4 @@ textarea, input {
 a {
     color: #FEFAE0;
     text-decoration: none;
-}
-
-h1 {
-    font-weight: normal;
-    font-size: 175%;
-    color: #BC6C25;
 }

@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 99;
     position: relative;
     font-size: 125%;
-    line-height: 35px;
+    /*font-size: 22px;*/
+    line-height: 40px;
     width: 100%;
     margin-right: 0;
 }
@@ -14,6 +14,7 @@
 fieldset {
     border: none;
     margin: 0;
+    padding: 0;
 }
 
 form {
@@ -23,6 +24,12 @@ form {
 .section-title {
     width: 80%;
     margin: 5% 10% 0 10%;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 100px;
 }
 
 p {
@@ -41,7 +48,7 @@ p span {
 
 h1 {
     font-weight: normal;
-    font-size: 175%;
+    font-size: 36px;
     color: #BC6C25;
 }
 

@@ -5,7 +5,7 @@
     line-height: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     width: 100%;
     margin-right: 0;
@@ -15,6 +15,7 @@
 fieldset {
     border:none;
     margin: 0;
+    padding: 0;
 }
 
 form {
@@ -24,6 +25,7 @@ form {
 .section-title {
     width: 80%;
     margin: 5% 10% 0 10%;
+    font-size: 20px;
 }
 
 
@@ -48,4 +50,10 @@ p span {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 36px;
+    color: #BC6C25;
 }
